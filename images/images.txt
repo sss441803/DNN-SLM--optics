@@ -1,0 +1,1 @@
+This folder stores generated training data (PSFs suffering optical aberration generated).
