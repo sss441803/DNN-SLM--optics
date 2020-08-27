@@ -12,7 +12,7 @@ library.py contains all the parameters needed to adjust, such as camera active a
 
 First, setup your optics. To access the camera view, run camera_view.py.
 
-Second, acquire training images. Make sure the SLM is operating in phase modulation mode. Specify the total number of image used for training and validation in library.py. Run the script image_collect.py. You should start with a small number of images to acquire, train the network and evaluate the network with predictor.py (discussed later) just to see there are no bugs. Beware, training of the nerual network requires patience. Sample size needs to be very large (100,000 images should be good).
+Second, acquire training images. Over 32 images are needed in training and validation set each, otherwise it cannot fill a batch. Make sure the SLM is operating in phase modulation mode. Specify the total number of image used for training and validation in library.py. Run the script image_collect.py. You should start with a small number of images to acquire, train the network and evaluate the network with predictor.py (discussed later) just to see there are no bugs. Beware, training of the nerual network requires patience. Sample size needs to be very large (100,000 images should be good).
 
 Third, train your neural network. Run Net.py.
 
